@@ -18,69 +18,59 @@ body{
   background:#f5f7fa;
   color:#333;
 }
-
 header{
   background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
   color:#fff;
   padding:60px 20px;
   text-align:center;
 }
-
 .logo{
   width:120px;
   margin-bottom:15px;
 }
-
 nav{
   background:#203a43;
   padding:12px;
   text-align:center;
 }
-
 nav a{
   color:#fff;
   margin:0 15px;
   text-decoration:none;
   font-weight:bold;
 }
-
 section{
   padding:60px 20px;
   max-width:1100px;
   margin:auto;
 }
-
 h2{
   text-align:center;
   margin-bottom:40px;
   color:#203a43;
 }
-
 .services{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:25px;
 }
-
 .card{
   background:#fff;
   padding:25px;
   border-radius:10px;
   box-shadow:0 4px 10px rgba(0,0,0,0.08);
   transition:0.3s;
+  text-align:center;
 }
-
 .card:hover{
   transform:translateY(-6px);
   box-shadow:0 10px 22px rgba(0,0,0,0.15);
 }
-
 .icon{
   font-size:36px;
   color:#2c5364;
   margin-bottom:10px;
 }
-
 .about{
   background:#fff;
   border-radius:10px;
@@ -88,13 +78,11 @@ h2{
   box-shadow:0 4px 10px rgba(0,0,0,0.08);
   text-align:center;
 }
-
 .profil{
   width:160px;
   border-radius:50%;
   margin-bottom:20px;
 }
-
 .btn{
   display:inline-block;
   margin-top:15px;
@@ -105,7 +93,6 @@ h2{
   border-radius:25px;
   font-weight:bold;
 }
-
 .whatsapp-float{
   position:fixed;
   width:55px;
@@ -120,12 +107,26 @@ h2{
   line-height:55px;
   text-decoration:none;
 }
-
 footer{
   background:#203a43;
   color:#fff;
   text-align:center;
   padding:20px;
+}
+.social-icons a{
+  color:#fff;
+  margin:0 10px;
+  font-size:20px;
+  text-decoration:none;
+}
+.project-img{
+  width:100%;
+  border-radius:10px;
+  cursor:pointer;
+  transition:0.3s;
+}
+.project-img:hover{
+  transform:scale(1.05);
 }
 </style>
 </head>
@@ -197,18 +198,35 @@ footer{
 <div class="services">
 
 <div class="card">
+<a href="#" target="_blank">
+<img src="images/img-reseau.jpg" alt="Réseau d’entreprise" class="project-img">
+</a>
 <h3>Réseau d’entreprise</h3>
 <p>Mise en place d’un réseau sécurisé pour PME.</p>
 </div>
 
 <div class="card">
+<a href="#" target="_blank">
+<img src="images/img-videosurveillance.jpg" alt="Vidéosurveillance IP" class="project-img">
+</a>
 <h3>Vidéosurveillance IP</h3>
 <p>Installation complète avec accès smartphone.</p>
 </div>
 
 <div class="card">
+<a href="#" target="_blank">
+<img src="images/img-siteweb.jpg" alt="Site web professionnel" class="project-img">
+</a>
 <h3>Site web professionnel</h3>
 <p>Création de site vitrine moderne.</p>
+</div>
+
+<div class="card">
+<a href="#" target="_blank">
+<img src="images/img-analyse.jpg" alt="Analyse des données" class="project-img">
+</a>
+<h3>Analyse des données</h3>
+<p>Structuration et visualisation des données pour décisions rapides.</p>
 </div>
 
 </div>
@@ -233,6 +251,12 @@ Contacter sur WhatsApp
 
 <footer>
 <p>&copy; 2026 – ALBHA TECH SOLUTIONS. Tous droits réservés.</p>
+<div class="social-icons">
+  <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+</div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
